@@ -1,24 +1,37 @@
 import BrainStatus from "../components/BrainStatus";
-import PhaseTabs from "../components/PhaseTabs";
-import StreamTable from "../components/StreamTable";
 import IncomeWidget from "../components/IncomeWidget";
+import StreamTable from "../components/StreamTable";
 import LogFeed from "../components/LogFeed";
+import PhaseTabs from "../components/PhaseTabs";
 
-export default function Home() {
+export default function Page() {
   return (
-    <main className="p-10 space-y-10">
-      <h1 className="text-4xl font-bold">🔥 LAKHSYA — JRAVIS Dashboard</h1>
+    <div className="p-6 space-y-6">
 
-      <BrainStatus />
-
-      <PhaseTabs />
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <StreamTable />
-        <IncomeWidget />
+      {/* HEADER */}
+      <div className="text-3xl font-bold tracking-wider text-center">
+        🧠 JRAVIS — Mission 2040 Dashboard
       </div>
 
-      <LogFeed />
-    </main>
+      {/* PHASE TABS */}
+      <PhaseTabs />
+
+      {/* TOP SECTION */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        {/* BRAIN STATUS */}
+        <BrainStatus />
+
+        {/* TOTAL INCOME */}
+        <IncomeWidget />
+
+        {/* LOG BOX */}
+        <LogFeed />
+      </div>
+
+      {/* STREAM TABLE */}
+      <StreamTable />
+
+    </div>
   );
 }

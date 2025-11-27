@@ -1,26 +1,31 @@
 export default function StreamTable() {
   return (
-    <div className="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700">
-      <h2 className="text-xl font-bold mb-4">📡 Stream Activity</h2>
+    <div className="glass neon-border p-5 mt-8">
+      <div className="text-xl font-semibold mb-4">Passive Income Streams</div>
 
-      <table className="w-full text-left">
-        <thead>
-          <tr className="text-gray-400">
-            <th>Stream</th>
-            <th>Status</th>
-            <th>Last Action</th>
+      <table className="w-full text-left text-sm">
+        <thead className="text-neon">
+          <tr>
+            <th className="p-2">Stream</th>
+            <th className="p-2">Owner</th>
+            <th className="p-2">Status</th>
+            <th className="p-2">Earnings</th>
           </tr>
         </thead>
-        <tbody>
+
+        <tbody className="text-gray-300">
           <tr>
-            <td>Amazon KDP</td>
-            <td className="text-green-400">Active</td>
-            <td>Publishing...</td>
+            <td className="p-2">Stationery Global</td>
+            <td className="p-2">Boss</td>
+            <td className="p-2 text-green-400">Active</td>
+            <td className="p-2">₹0.00</td>
           </tr>
+
           <tr>
-            <td>Canva Automation</td>
-            <td className="text-yellow-400">Drafting</td>
-            <td>Generating Designs</td>
+            <td className="p-2">JRAVIS Daily Bot</td>
+            <td className="p-2">Boss</td>
+            <td className="p-2 text-yellow-400">Syncing…</td>
+            <td className="p-2">₹0.00</td>
           </tr>
         </tbody>
       </table>

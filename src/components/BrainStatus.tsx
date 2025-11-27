@@ -1,9 +1,12 @@
 export default function BrainStatus() {
   return (
-    <div className="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700">
-      <h2 className="text-2xl font-bold mb-4">🧠 JRAVIS Brain Status</h2>
-      <p className="text-green-400">✔ Active</p>
-      <p className="text-sm text-gray-400">Running 30 Streams in Human Mode</p>
+    <div className="glass neon-border p-5">
+      <div className="text-xl font-semibold mb-2">Brain Status</div>
+
+      <div className="text-neon text-lg">🟢 ONLINE</div>
+      <div className="text-gray-400 text-sm mt-1">
+        All systems active. VA Bot + JRAVIS synced.
+      </div>
     </div>
   );
 }

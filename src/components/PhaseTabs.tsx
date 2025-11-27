@@ -1,9 +1,22 @@
+"use client";
+import { useState } from "react";
+
 export default function PhaseTabs() {
+  const [tab, setTab] = useState("1");
+
   return (
-    <div className="flex gap-4">
-      <button className="px-4 py-2 bg-blue-700 rounded-lg">Phase 1</button>
-      <button className="px-4 py-2 bg-gray-700 rounded-lg">Phase 2</button>
-      <button className="px-4 py-2 bg-gray-700 rounded-lg">Phase 3</button>
+    <div className="flex space-x-3 justify-center">
+      {["1", "2", "3"].map((t) => (
+        <button
+          key={t}
+          onClick={() => setTab(t)}
+          className={`px-5 py-2 rounded-lg glass 
+            ${tab === t ? "bg-neon/20 border border-neon text-neon" : "text-white"}
+          `}
+        >
+          Phase {t}
+        </button>
+      ))}
     </div>
   );
 }

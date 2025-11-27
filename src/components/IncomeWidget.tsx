@@ -1,9 +1,15 @@
 export default function IncomeWidget() {
   return (
-    <div className="p-6 bg-gray-900 rounded-xl shadow-lg border border-gray-700">
-      <h2 className="text-xl font-bold mb-4">💰 Earnings</h2>
-      <p className="text-3xl font-bold text-green-400">₹14,500 / day</p>
-      <p className="text-gray-400 text-sm mt-2">Target: ₹4 Cr by June 2027</p>
+    <div className="glass neon-border p-5">
+      <div className="text-xl font-semibold mb-3">Today's Earnings</div>
+
+      <div className="text-4xl font-bold text-neon">
+        ₹ 0.00
+      </div>
+
+      <div className="text-purpleglow text-sm mt-1">
+        Target: ₹4 Cr by June 2027
+      </div>
     </div>
   );
 }

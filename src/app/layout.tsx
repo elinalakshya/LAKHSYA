@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Lakhsya Dashboard",
-  description: "JRAVIS 30 Stream Control Center",
+  title: "JRAVIS Stealth Dashboard",
+  description: "Mission 2040 Control Hub"
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -10,3 +10,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
